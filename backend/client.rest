@@ -1,0 +1,128 @@
+### POST REVIEW
+
+POST http://localhost:3001/reviews HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_id": 7,
+    "movie_id": 28,
+    "review_title": "My favorite rom-com!",
+    "review_body": "This is my go-to romantic comedy for those dreary days when cheering up is needed. The chemistry between the two leads is palpable and the story is heartwarming. I highly recommend this movie! One star removed for the weird setting.",
+    "stars": 4
+}
+
+### GET ALL REVIEWS
+
+GET http://localhost:3001/reviews HTTP/1.1
+Content-Type: application/json
+
+
+### GET ALL REVIEWS BY MOVIE ID
+
+GET http://localhost:3001/reviews/movie/12 HTTP/1.1
+Content-Type: application/json
+
+### GET ALL MEMBERS OF GROUP
+GET http://localhost:3001/groups/1 HTTP/1.1
+
+### GET ALL GROUPS BY USER
+GET http://localhost:3001/user/group/20 HTTP/1.1
+
+### REGISTER USER
+POST http://localhost:3001/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Admin1234",
+    "password": "Admin123"
+}
+
+### FAULTY REGISTER USER
+POST http://localhost:3001/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Admin1234",
+    "password": "Short"
+}
+
+### LOGIN USER
+POST http://localhost:3001/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Admin1234",
+    "password": "Admin123"
+}
+
+### FAULTY LOGIN USER
+POST http://localhost:3001/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Admin1234",
+    "password": "WrongPassword"
+}
+
+### DELETE USER
+DELETE http://localhost:3001/user/delete HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 8,
+    "username": "SecondTest",
+    "password": "SecondTest123"
+}
+
+### INSERT USER
+POST http://localhost:3001/user/register HTTP/1.1
+Content-Type: application/json
+{
+    "username": "Test1",
+    "password": "Asdasd123"
+}
+
+### GET ALL GROUPS
+GET http://localhost:3001/groups HTTP/1.1
+
+### GET ALL USERS BY GROUP ID
+GET http://localhost:3001/groups/1 HTTP/1.1
+
+### GET ALL GROUPS BY USER ID
+GET http://localhost:3001/user/group/8 HTTP/1.1
+
+### GET PINNED MOVIES
+GET http://localhost:3001/pinned/movie/1 HTTP/1.1
+
+### GET GROUP BY GROUP ID
+GET http://localhost:3001/group/1 HTTP/1.1
+
+### DELETE GROUP BY ID
+DELETE http://localhost:3001/group/2 HTTP/1.1
+
+### ACCEPT USER
+PUT http://localhost:3001/user/invite/14 HTTP/1.1
+
+### DELETE GROUP BY ID
+DELETE http://localhost:3001/group/2 HTTP/1.1
+
+### ACCEPT USER
+PUT http://localhost:3001/user/invite/14 HTTP/1.1
+
+
+
+### GET PINNED SHOWTIMES
+GET http://localhost:3001/pinned/showtime/1 HTTP/1.1
+
+### POST PINNEDSHOW
+POST http://localhost:3001/pinned/showtime/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "movie_id": "2141155",
+    "area_id": "1018",
+    "date": "27/11/2024"
+}
+
+### GET USERNAME BY ID
+GET http://localhost:3001/user/username/1 HTTP/1.1
