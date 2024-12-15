@@ -1,0 +1,135 @@
+.showtime-results-grid {
+    display: none;
+}
+
+.showtime-search-table {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.showtime-search-table th, .showtime-search-table td {
+    padding: 6px;
+    border: none;
+}
+
+.showtime-search-table #city, #movie, #date {
+    width: 100%;
+}
+
+.showtime-results-table {
+    table-layout: auto;
+    margin-left: 12px;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+.showtime-results-table td {
+    padding: 8px 12px;
+}
+
+.showtime-results-table select#group {
+    width: 100%;
+    max-width: 150px;
+}
+
+.showtime-results-table th:last-child,
+.showtime-results-table td:last-child {
+    max-width: 200px; /* Adjust the column width as needed */
+}
+
+.showtime-results-table th {
+    padding: 8px;
+    text-align: center;
+}
+
+.showtime-results-table th, td {
+    word-wrap: break-word; /* Ensure content wraps instead of causing overflow */
+}
+
+#pin-button {
+    padding: 4px 10px;
+    margin: 0;
+}
+
+.showtime-results-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 12px;
+}
+
+.showtime-result {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.showtime-result-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    text-align: left; /* Ensure all text aligns to the left */
+    word-wrap: break-word; /* Allow wrapping for long words */
+    overflow-wrap: break-word; /* Break long words if necessary */
+}
+
+.showtime-result-item strong {
+    display: inline-block;
+    width: 120px; /* Adjust based on your design */
+    margin-right: 5px; /* Optional: space between label and value */
+}
+
+.showtime-results-grid select#group {
+    width: 100%;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.showtime-search-table, 
+.showtime-search-table th, 
+.showtime-search-table td {
+    border: none !important;
+}
+
+/* Responsive Design for Narrow Screens */
+@media (max-width: 768px) {
+
+    .showtime-results-table {
+        display: none;
+    }
+
+    .showtime-results-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+
+    .showtime-result {
+        margin-bottom: 15px;
+    }
+
+    .showtime-result-item {
+        font-size: 14px;
+    }
+
+    .showtime-results-grid select#group {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    #pin-button {
+        margin: 6px;
+        padding: 2px 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .showtime-results-grid {
+        display: block;
+    }
+}

@@ -1,0 +1,182 @@
+/* GLOBAL STYLING */ 
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #5d2062;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.main-wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    transition: 0.4s, color 0.4s;
+    font-family: 'Georgia', sans-serif;
+    background-color: #eff3f6;
+    color: #000000;
+    display: flex;
+    flex-direction: column; /* Use flex to stack content vertically */
+    height: 100%;
+}
+
+button {
+    font-family: 'Georgia', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: #f4f7fa;
+    cursor: pointer;
+}
+
+/* styling for input fields */ 
+input {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* styling for dropdown menus */ 
+select {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+/* styling for tables */ 
+table {
+    border-collapse: collapse; /* this means that the borders of the table cells will be collapsed into a single border */
+    border: #000000 1px solid;
+    border-radius: 3px;
+    }
+
+    
+table th, table td {
+    border: #000000 1px solid;
+    padding: 5px;
+}
+
+
+/* styling for images */ 
+img {
+    border-radius: 0px;
+    max-width: 100%;
+}
+
+.major-delete-button {
+    margin-top: 24px;
+    padding: 12px;
+    color: #ae0000;
+}
+
+.highlight-box {
+    background-color: #f2f5f7;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+
+
+/* ************* DARK ************** */
+
+body.dark-theme{
+    background-color: #090913;
+    color: #eff3f6;
+}
+
+.dark-theme button {
+    background-color: #351010;
+    color: #d2e3ef;
+    border: 1px solid #2d3235;
+}
+.dark-theme a {
+    color: #a0c5e2;
+}
+
+.dark-theme textarea, 
+.dark-theme input, 
+.dark-theme select {
+    background-color: #130e0e;
+    color: #d2e3ef;
+    border: 1px solid #596369;
+}
+
+::placeholder {
+    color: #848e95;
+} 
+
+.dark-theme .highlight-box {
+    background-color: #1d0d0de6;
+    border: 1px solid #6f5050e6;
+}
+
+.dark-theme table {
+    border: #93a1ab 1px solid;
+}
+
+.dark-theme table th, .dark-theme table td {
+    border: #93a1ab 1px solid;
+}
+
+.dark-theme button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* ************* DARK END ************** */
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+        margin: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+        margin: 16px;
+    }
+
+    table th, table td {
+        padding: 0px;
+        padding-right: 5px;
+    }
+
+}

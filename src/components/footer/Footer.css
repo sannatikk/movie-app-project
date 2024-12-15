@@ -1,0 +1,35 @@
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    padding: 5px;
+    align-items: center;
+    background-color: #dae3eb;
+    margin-top: 12px;
+    height: 50px;
+}
+
+#footer img {
+    width: 15px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#footer .text-muted {
+    display: flex;
+    align-items: center;
+}
+
+.dark-theme #footer {
+    background-color: #1d0d0de6;
+    color: #eff3f6;
+}
+
+.dark-theme #footer img {
+    background-color: #bad8ef;
+}

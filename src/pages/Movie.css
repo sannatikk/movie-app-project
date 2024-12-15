@@ -1,0 +1,92 @@
+.movie-text {
+    max-width: 1000px;
+}
+
+.movie-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.add-movie-to-group-container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group-dropdown-menu {
+    max-width: 150px;
+}
+
+.review-form {
+    display: block;
+    width: 100%;
+}
+
+.review-form label {
+    display: block;  /* labels are on top of the input fields */
+    margin-bottom: 4px;
+}
+
+.review-form .review-fields {
+    display: block;
+    gap: 16px;
+}
+
+.review-form input[type="number"], 
+.review-form input[type="text"] {
+    padding: 8px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.review-form input[type="number"] {
+    width: 8%;
+    text-align: center;
+}
+
+.review-form input[type="number"]::placeholder {
+    color: #888;  /* Placeholder color */
+    font-style: italic;  /* Placeholder font style */
+    text-align: center;
+}
+
+.review-form textarea {
+    width: 100%;  /* Ensure the textarea takes full width */
+    max-width: 900px;
+    padding: 8px;  /* Add padding to textarea */
+    resize: vertical;  /* Allow vertical resize */
+    height: 150px;  /* Set the height of the Review Body textarea */
+}
+
+.review-form .review-title-field textarea {
+    height: 40px;  /* Set the height for the Review Title textarea */
+}
+
+.review-form .review-body-field {
+    margin-bottom: 16px; /* Space between review body and submit button */
+}
+
+.review-form button {
+    margin-bottom: 16px;
+}
+
+.review-box {
+    border: 1px solid #ddd;  /* Add a border around the review item */
+    padding: 16px;  /* Add padding to the review item */
+    margin-bottom: 16px;  /* Space between review items */
+    max-width: 900px;  /* Limit the width of the review item */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.review-item {
+    padding: 5px;
+}
+
+@media (max-width: 550px) {
+    .review-form input[type="number"] {
+        width: 12%;  /* Make the Rating input field 100% of the width */
+    }
+}
